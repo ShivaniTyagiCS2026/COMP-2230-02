@@ -64,6 +64,7 @@ For each hash function above, answer the following three questions:
 3. Does your answer to (ii) change if the size of your table might be even? If so, explain.
 
 **Sample answer for `x`:**
+
 1. `x` is valid because it is deterministic and equal inputs produce equal outputs.
 2. It is fast, but it provides only basic distribution; with a prime table size, `x % tableSize` is usually acceptable, although it does not mix bits or reduce patterned collisions.
 3. If the table size might be even, the answer changes for the nice-properties part: `x % evenSize` can perform poorly on even-valued keys, since it may only use even buckets.
